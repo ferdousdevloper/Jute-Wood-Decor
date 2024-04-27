@@ -1,0 +1,72 @@
+.slide{
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9;
+}
+
+
+
+
+
+
+
+
+
+.slide1{
+    background-image: url('https://i.ibb.co/7zZdLnb/2148234302.jpg');
+}
+.slide2{
+    background-image: url('https://i.ibb.co/zxFvHwk/2149072895.jpg');
+}
+.slide3{
+    background-image: url('https://i.ibb.co/7NbqQQH/130334.jpg');
+}
+.slide4{
+    background-image: url('https://i.ibb.co/W0JZ3Bd/2149310993.jpg');
+}
+.slide5{
+    background-image: url('https://i.ibb.co/d6FmsTY/2148325983.jpg');
+}
+.slide6{
+    background-image: url('https://i.ibb.co/HYXpWpw/2151003052.jpg');
+}
+.slide7{
+    background-image: url('https://i.ibb.co/yWcsgz6/2151022108.jpg');
+}
+.slide8{
+    background-image: url('https://i.ibb.co/bK8KkSD/13294.jpg');
+}
+
+
+
+ 
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    filter: brightness(60%);
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
