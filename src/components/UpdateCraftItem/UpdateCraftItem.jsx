@@ -30,10 +30,8 @@ const UpdateCraftItem = () => {
     const image = form.image.value;
     const rating = form.rating.value;
     const description = form.description.value;
-    const email = form.email.value;
-    const userName = form.userName.value;
 
-    const updatedCraftItem = {name, category, price, customization, processingTime, stockStatus, image, rating, description, email, userName}
+    const updatedCraftItem = {name, category, price, customization, processingTime, stockStatus, image, rating, description}
 
     console.log(updatedCraftItem);
 
@@ -48,7 +46,7 @@ const UpdateCraftItem = () => {
     .then(res => res.json())
     .then(data =>{
         console.log(data);
-        if(data.insertedId){
+        if(data.modifiedCount > 0){
             Swal.fire({
                 title: "Updated Craft Item Successfully!",
                 icon: "success"

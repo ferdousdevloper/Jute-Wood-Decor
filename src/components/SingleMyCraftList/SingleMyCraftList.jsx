@@ -25,15 +25,15 @@ const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
     return (
         <div>
             <div className="">
-            <div className="card w-full glass ">
+            <div className="w-full shadow-2xl ">
               <figure className="">
                 <img
                   src={image}
                   alt="car!"
-                  className="rounded-2xl mx-5 my-5 w-full lg:max-w-[350px]"
+                  className="w-full"
                 />
               </figure>
-              <div className="card-body">
+              <div className="p-6">
                 <div className=" flex gap-2 items-center  p-2 rounded-xl">
                   <strong>Rating: </strong>
                   <FaStar className="text-yellow-600" />
@@ -45,12 +45,12 @@ const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
                   </p>
                   <p className="text-right py-4 badge badge-accent font-bold">$ {price}</p>
                 </div>
-                <h2 className="card-title">{name}</h2>
-                <p>
+                <h2 className="text-4xl font-gilda py-4">{name}</h2>
+                <p className="py-3 text-gray-500">
                   <strong>Category: </strong>
                   {category}
                 </p>
-                <p>
+                <p className="py-4 text-gray-500">
                   <strong>Customization: </strong>
                   {customization}
                 </p>
