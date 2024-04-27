@@ -14,6 +14,7 @@ import Register from "./Pages/Login/Register";
 import FirebaseAuthProvider from "./FirebaseAuthProvider/FirebaseAuthProvider";
 import ViewDetail from "./components/ViewDetail/ViewDetail";
 import PrivateDetails from "./PrivateRoute/PrivateDetails";
+import UpdateCraftItem from "./components/UpdateCraftItem/UpdateCraftItem";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,13 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/decor/${params._id}`),
+      },
+      {
+        path: "/updateCraftItem/:_id",
+        element: (<PrivateDetails>
+          <UpdateCraftItem></UpdateCraftItem>
+        </PrivateDetails>),
+        loader:({params}) => fetch(`http://localhost:5000/decor/${params._id}`)
       },
     ],
   },

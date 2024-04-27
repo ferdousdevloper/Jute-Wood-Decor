@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
@@ -54,7 +55,8 @@ const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
                   {customization}
                 </p>
                 <div className="flex justify-between gap-2">
-                  <button
+                  <Link
+                  to={`/updateCraftItem/${_id}`}
                     href="#_"
                     className="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50"
                   >
@@ -77,7 +79,7 @@ const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
                     </span>
                     <span className="relative flex items-center gap-1"><FaEdit />
                     Update</span>
-                  </button>
+                  </Link>
                   <button
                   onClick={()=> handleDelete(_id)}
                     href="#_"
