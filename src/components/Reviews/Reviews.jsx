@@ -5,147 +5,108 @@ import Marquee from "react-fast-marquee";
 const Reviews = () => {
   return (
     <div className="  md:container mx-auto mt-10 mb-20">
-      <div>
-        <h1 data-aos="zoom-in"
-     data-aos-duration="1000" data-aos-delay="500" className="text-4xl font-bold text-center mb-10">Customer Testimonials</h1>
+      <div className="text-center mb-10">
+        <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold mt-10 mb-6">
+          TESTIMONIAL
+        </h1>
+        <p className="max-w-[600px] mx-auto">
+        Our customers love us! Hear what they have to say about their experiences. Discover why they trust us for quality products, excellent service, and unbeatable value. Join the satisfied customer community today!
+        </p>
       </div>
-      <Marquee>
-        <div data-aos="zoom-in"
-     data-aos-duration="1000" data-aos-delay="1300" className="grid grid-cols-4 gap-8 ml-8">
-          {/* card 1 */}
-          <div className="container border bg-neutral-200 flex flex-col max-w-sm p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 ">
-            <div className="flex justify-between p-4">
-              <div className="flex space-x-4">
-                <div>
-                  <img
-                    src="https://i.ibb.co/qFj421t/p1.jpg"
-                    alt=""
-                    className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold">Leroy Jenkins</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-2 dark:text-yellow-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  className="w-5 h-5 fill-current"
-                >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
-                </svg>
-                <span className="text-xl font-bold">4.5</span>
-              </div>
-            </div>
-            <div className="p-4 space-y-2 text-sm dark:text-gray-600">
-              <p>
-              Exquisite jute and wood crafts! Impeccable quality and eco-conscious materials. My home feels transformed with these rustic accents. Customer service was exceptional, and delivery was swift. Friends and family are impressed by the craftsmanship. Can't wait to explore more from this wonderful collection!
+      <section className=" ">
+        <div className="container px-6 py-12 mx-auto">
+          <div className="grid items-center gap-4 xl:grid-cols-5">
+            <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
+              <h2 className="text-4xl font-bold">
+              Exceptional Service, Exceeded Expectations
+              </h2>
+              <p className="dark:text-gray-600">
+              Dive into our customer's journey of transformation and discover how our service exceeded their expectations, leaving them thrilled and satisfied beyond measure.
               </p>
             </div>
-          </div>
-          {/* card 2 */}
-          <div className="container border bg-neutral-200 flex flex-col max-w-sm p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 ml-1">
-            <div className="flex justify-between p-4">
-              <div className="flex space-x-4">
-                <div>
-                  <img
-                    src="https://i.ibb.co/pL0XPdd/p2.jpg"
-                    alt=""
-                    className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                  />
+            <div className="p-6 xl:col-span-3">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="grid content-center gap-4">
+                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
+                    <p>
+                    Experience testimonials where skepticism transforms into admiration. Customers rave about our quality, service, and value, reflecting our unwavering commitment to excellence. Join us on this transformative journey, where transactions become unforgettable experiences, and connections are forged. Discover why our customers trust us time and again.
+                    </p>
+                    <div className="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://i.ibb.co/9Vgd0Bw/ferdous.jpg"
+                        alt=""
+                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+                      />
+                      <div>
+                        <p className="text-lg font-semibold">Ferdous Hossain</p>
+                        <p className="text-sm dark:text-gray-600">
+                          Owner of Company Co.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
+                    <p>
+                    Explore a tapestry of testimonials illuminating our steadfast commitment to excellence. From the first interaction to the last, customers extol our superior quality, exemplary service, and unmatched value. Join our loyal community today and immerse yourself in the unparalleled experience that defines our brand.
+                    </p>
+                    <div className="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://i.ibb.co/pZkrQ3d/921.jpg"
+                        alt=""
+                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+                      />
+                      <div>
+                        <p className="text-lg font-semibold">Sophia Parker</p>
+                        <p className="text-sm dark:text-gray-600">
+                          CFO of company Co.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold">Emily Thompson</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-2 dark:text-yellow-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  className="w-5 h-5 fill-current"
-                >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
-                </svg>
-                <span className="text-xl font-bold">4.5</span>
-              </div>
-            </div>
-            <div className="p-4 space-y-2 text-sm dark:text-gray-600">
-              <p>
-              Absolutely delighted with my jute and wood purchases! The craftsmanship is outstanding, and they add a touch of natural elegance to my space. Customer service was top-notch, and the website navigation was smooth. Highly recommend for anyone seeking sustainable and stylish home decor solutions!
-              </p>
-            </div>
-          </div>
-          {/* card 3 */}
-          <div className="container border bg-neutral-200 flex flex-col max-w-sm p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 ml-1">
-            <div className="flex justify-between p-4">
-              <div className="flex space-x-4">
-                <div>
-                  <img
-                    src="https://i.ibb.co/87YwjYD/p3.jpg"
-                    alt=""
-                    className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold">Sophia Rodriguez</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-2 dark:text-yellow-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  className="w-5 h-5 fill-current"
-                >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
-                </svg>
-                <span className="text-xl font-bold">4.2</span>
-              </div>
-            </div>
-            <div className="p-4 space-y-2 text-sm dark:text-gray-600">
-              <p>
-              Thrilled with my jute and wood decor! Each piece exudes warmth and character, enhancing the ambiance of my home. The ordering process was seamless, and the items arrived well-packaged and on time. Highly impressed by the attention to detail and eco-friendly ethos. A truly satisfying shopping experience!
-              </p>
-            </div>
-          </div>
-          {/* card 4 */}
-          <div className="container border bg-neutral-200 flex flex-col max-w-sm p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 ml-1">
-            <div className="flex justify-between p-4">
-              <div className="flex space-x-4">
-                <div>
-                  <img
-                    src="https://i.ibb.co/qdm88yF/p4.jpg"
-                    alt=""
-                    className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold">Samantha Westwood</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
+                <div className="grid content-center gap-4">
+                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
+                    <p>
+                    Step into a world of authentic testimonials showcasing our unwavering dedication to excellence. From the initial encounter to the final transaction, our customers' journey is marked by unparalleled quality, exceptional service, and unbeatable value. Join our thriving community today and discover why trust in our brand is unwavering.
+                    </p>
+                    <div className="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://i.ibb.co/sy34wKy/19591.jpg"
+                        alt=""
+                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+                      />
+                      <div>
+                        <p className="text-lg font-semibold">Alexander West</p>
+                        <p className="text-sm dark:text-gray-600">
+                          CTO of Company Co.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
+                    <p>
+                    Immerse yourself in the heartfelt testimonials of our valued customers, who share their transformative journeys with honesty and enthusiasm. From initial skepticism to overwhelming satisfaction, they recount the exceptional experiences that have left a lasting impression. Our commitment to unparalleled quality, impeccable service, and unbeatable value shines through each testimonial, reflecting our dedication to exceeding expectations. Join our satisfied community of customers and discover why they trust us time and time again. With every testimonial, we reaffirm our promise to deliver nothing short of excellence, ensuring your journey with us is nothing less than extraordinary.
+                    </p>
+                    <div className="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://i.ibb.co/ZTFjt2p/2149271990-1.jpg"
+                        alt=""
+                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+                      />
+                      <div>
+                        <p className="text-lg font-semibold">Olivia Taylor</p>
+                        <p className="text-sm dark:text-gray-600">
+                          CMO of Company Co.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center space-x-2 dark:text-yellow-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  className="w-5 h-5 fill-current"
-                >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
-                </svg>
-                <span className="text-xl font-bold">4.3</span>
-              </div>
-            </div>
-            <div className="p-4 space-y-2 text-sm dark:text-gray-600">
-              <p>
-              Absolutely love the jute and wood creations! They bring a natural and rustic charm to my living space. The craftsmanship is impeccable, and the website offers a wide variety of beautiful pieces. Shipping was quick, and customer service was excellent. Highly recommend!
-              </p>
             </div>
           </div>
         </div>
-      </Marquee>
+      </section>
     </div>
   );
 };

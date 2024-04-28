@@ -5,9 +5,16 @@ const CraftItems = () => {
   const decors = useLoaderData();
   const limitedDecors = decors.slice(0, 6);
   return (
-    <div>
-      <h1>all craft {decors.length}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div >
+      <div className="text-center mb-10">
+        <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold mt-10 mb-6">
+          CRAFT ITEM SECTION
+        </h1>
+        <p className="max-w-[600px] mx-auto">
+          Browse through our extensive selection of categories, catering to all interests and needs. Find the perfect fit for your search and uncover exciting possibilities today.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto">
         {limitedDecors.map((decor) => (
           <SingleCraftItems key={decor._id} decor={decor}></SingleCraftItems>
         ))}
@@ -16,7 +23,7 @@ const CraftItems = () => {
         <Link to='/allCraftItems'>
           <a
             href="#_"
-            className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
+            className="relative shadow-xl inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
           >
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
               <svg

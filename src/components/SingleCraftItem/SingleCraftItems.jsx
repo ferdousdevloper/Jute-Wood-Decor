@@ -1,5 +1,13 @@
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Typography,
+  Avatar,
+} from "@material-tailwind/react";
+//import backgroundImage from "../../../public/cool-background (1).png"
 const SingleCraftItems = ({ decor }) => {
   const {
     _id,
@@ -13,17 +21,29 @@ const SingleCraftItems = ({ decor }) => {
     rating,
   } = decor || {};
   return (
-    <div>
-      <div className="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800">
-        <div className="space-y-4">
-          <div className="space-y-2">
-            <img
-              src={image}
-              alt=""
-              className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-            />
-          </div>
-          <div className="space-y-2">
+    <div className="mx-auto ">
+      <Card
+      shadow={false}
+      className=" relative grid max-h-[40rem] w-full max-w-[25rem] items-end justify-center overflow-hidden text-center shadow-2xl"
+    >
+      <CardHeader
+        floated={false}
+        shadow={false}
+        color="transparent"
+        className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://i.ibb.co/TMQ2XsX/cool-background.png')] bg-cover bg-center"
+      >
+        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
+      </CardHeader>
+      
+      <CardBody className="relative py-4 ">
+      <Avatar
+          size="xl"
+          variant="circular"
+          alt="tania andrew"
+          className="border-2 border-white"
+          src={image}
+        />
+        <div className="space-y-2 text-white">
             <div rel="noopener noreferrer" href="#" className="block">
               <div className="flex justify-between">
                 <h3 className="text-xl font-semibold">
@@ -36,25 +56,26 @@ const SingleCraftItems = ({ decor }) => {
               </div>
             </div>
             <div>
-                <h1 className="text-lg"><strong>Category:</strong> {category}</h1>
+                <h1 className="md:text-lg text-left"><strong>Category:</strong> {category}</h1>
             </div>
             <div className="flex justify-between">
                 <p><strong>Customization:</strong> {customization}</p>
-                <p className="bg-green-500 text-white px-3 py-1 rounded-xl">{stockStatus}</p>
+                <p className="bg-green-500  md:px-3 md:py-1 rounded-xl">{stockStatus}</p>
             </div>
             <div>
-                <p><strong>Processing Time:</strong> {processingTime} Days</p>
+                <p className="text-left"><strong>Processing Time:</strong> {processingTime} Days</p>
             </div>
             <div className="border border-green-600 text-center rounded-3xl te py-2">
                 <p><strong>Price: $ {price}</strong></p>
             </div>
             <Link to={`/viewDetail/${_id}`} className="flex justify-end">
-                <button className="btn bg-green-500 text-white text-md">View Details</button>
+                <button className="btn w-full bg-green-500 text-white text-md rounded-full">View Details</button>
             </Link>
             
           </div>
-        </div>
-      </div>
+        
+      </CardBody>
+    </Card>
     </div>
   );
 };
