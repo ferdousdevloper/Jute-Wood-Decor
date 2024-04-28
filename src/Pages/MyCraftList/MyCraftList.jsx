@@ -84,9 +84,9 @@ const MyCraftList = () => {
           now!
         </p>
       </div>
-      <div>
-        <details className="dropdown">
-          <summary className="m-1 btn">Filter Customization</summary>
+      <div className="flex flex-col items-center justify-center">
+        <details className="dropdown mb-6">
+          <summary className="m-1 btn bg-purple-700 text-white">Filter Customization</summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li onClick={()=>handleCustomization('Yes')}>
               <a>Yes</a>

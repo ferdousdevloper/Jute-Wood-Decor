@@ -4,7 +4,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  Typography,
   Avatar,
 } from "@material-tailwind/react";
 //import backgroundImage from "../../../public/cool-background (1).png"
@@ -23,10 +22,14 @@ const SingleCraftItems = ({ decor }) => {
   return (
     <div className="mx-auto ">
       <Card
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="500"
       shadow={false}
       className=" relative grid max-h-[40rem] w-full max-w-[25rem] items-end justify-center overflow-hidden text-center shadow-2xl"
     >
       <CardHeader
+      
         floated={false}
         shadow={false}
         color="transparent"
@@ -43,7 +46,11 @@ const SingleCraftItems = ({ decor }) => {
           className="border-2 border-white"
           src={image}
         />
-        <div className="space-y-2 text-white">
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="1000"
+        className="space-y-2 text-white">
             <div rel="noopener noreferrer" href="#" className="block">
               <div className="flex justify-between">
                 <h3 className="text-xl font-semibold">

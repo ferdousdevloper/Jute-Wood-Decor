@@ -5,8 +5,12 @@ const AllCraftItems = () => {
   const decor = useLoaderData();
 
   return (
-    <div className="md:container md:mx-auto ">
-      <div className="overflow-x-auto border">
+    <div className="md:container md:mx-auto my-10 ">
+      <h2
+      className="text-2xl font-semibold sm:text-4xl text-center mb-6">
+        ALL ART & CRAFT ITEMS
+      </h2>
+      <div className="overflow-x-auto border rounded-2xl shadow-2xl">
         <table className="table ">
           {/* head */}
           <thead>

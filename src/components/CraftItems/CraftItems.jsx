@@ -6,7 +6,11 @@ const CraftItems = () => {
   const limitedDecors = decors.slice(0, 6);
   return (
     <div >
-      <div className="text-center mb-10">
+      <div 
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="500"
+      className="text-center mb-10">
         <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold mt-10 mb-6">
           CRAFT ITEM SECTION
         </h1>
@@ -20,7 +24,10 @@ const CraftItems = () => {
         ))}
       </div>
       <div className="flex flex-col items-center mt-10">
-        <Link to='/allCraftItems'>
+        <Link to='/allCraftItems'
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="500">
           <a
             href="#_"
             className="relative shadow-xl inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
@@ -41,7 +48,9 @@ const CraftItems = () => {
             <span className="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
               See ALL
             </span>
-            <span className="relative invisible">See All</span>
+            <span
+            
+            className="relative invisible">See All</span>
           </a>
         </Link>
       </div>

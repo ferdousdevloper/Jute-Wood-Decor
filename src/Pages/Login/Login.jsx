@@ -7,11 +7,12 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import SocialLogin from "./SocialLogin";
 import Loader from "../../components/Loader/Loader";
+import LoginAnimation from "../../LoginAnimation.json";
+import Lottie from "lottie-react";
 
 const Login = () => {
-    const [showPassword, setShowPassword] = useState(true);
-  const { signInUser, setLoading,
-    loading } = useAuth();
+  const [showPassword, setShowPassword] = useState(true);
+  const { signInUser, setLoading, loading } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const from = location?.state || "/";
@@ -27,9 +28,9 @@ const Login = () => {
     signInUser(email, password)
       .then((result) => {
         if (result.user) {
-            setLoading(false);
+          setLoading(false);
           navigate(from);
-          
+
           toast.success("Logged in successfully");
         }
       })
@@ -45,39 +46,27 @@ const Login = () => {
         <title>WOOD | LOGIN</title>
       </Helmet>
       {loading && <Loader></Loader>}
-      <div className="pt-40 md:pt-20  relative bg1 bgEffect">
-      </div>
+      <div className="pt-40 md:pt-20  relative bg1 bgEffect"></div>
+      <h1 className="text-5xl font-bold text-center">Login now!</h1>
       <div className="hero min-h-screen pt-40 md:pt-20 ">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center">
-            <h1
-              
-              className="text-5xl font-bold "
-            >
-              Login now!
-            </h1>
-            <p
-              
-              className="py-6"
-            >
-              Experience seamless access with our innovative login form.
-              Streamlined design meets top-notch security for a hassle-free
-              login experience that prioritizes both convenience and protection.
-            </p>
+            <div>
+              <Lottie
+                animationData={LoginAnimation}
+                height={300}
+                width={300}
+                className=""
+              ></Lottie>
+            </div>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl rounded-xl border">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span
-                    
-                    className="label-text"
-                  >
-                    Email
-                  </span>
+                  <span className="label-text">Email</span>
                 </label>
                 <input
-                  
                   type="email"
                   placeholder="email"
                   className="input input-bordered"
@@ -90,17 +79,9 @@ const Login = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span
-                    
-                    className="label-text"
-                  >
-                    Password
-                  </span>
+                  <span className="label-text">Password</span>
                 </label>
-                <div
-                  
-                  className="relative"
-                >
+                <div className="relative">
                   <input
                     type={showPassword ? "password" : "text"}
                     placeholder="password"
@@ -119,29 +100,18 @@ const Login = () => {
                   <span className="text-error">{errors.password.message}</span>
                 )}
                 <label className="label">
-                  <a
-                    
-                    href="#"
-                    className="label-text-alt link link-hover"
-                  >
+                  <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
                   </a>
                 </label>
-                
-                
               </div>
-              <div
-                
-                className="form-control mt-6"
-              >
+              <div className="form-control mt-6">
                 <button className="btn bg-blue-500 border-0 text-white font-extrabold">
                   Login
                 </button>
               </div>
               <div className="mt-8">
-                <p
-                 
-                >
+                <p>
                   New to here? Please{" "}
                   <Link to="/register" className="text-primary">
                     <strong>Register</strong>
@@ -150,7 +120,6 @@ const Login = () => {
               </div>
             </form>
             <SocialLogin></SocialLogin>
-            
           </div>
         </div>
       </div>

@@ -12,7 +12,6 @@ import { useLoaderData } from "react-router-dom";
 const ViewDetail = () => {
   const singleData = useLoaderData();
   const {
-    _id,
     image,
     name,
     category,
@@ -22,13 +21,11 @@ const ViewDetail = () => {
     stockStatus,
     rating,
     description,
-    email,
-    userName,
   } = singleData || {};
 
   return (
     <div className="my-20">
-      <Card className="w-full mx-auto max-w-[68rem] flex-row">
+      <Card className="w-full mx-auto max-w-[68rem] flex-row shadow-2xl">
         <CardHeader
           shadow={false}
           floated={false}
@@ -70,32 +67,14 @@ const ViewDetail = () => {
             </p>
           </div>
           <div className="flex justify-between">
-            <p className=" border border-[#059669] px-8 py-2 rounded-lg bg-[#059669]  bg-opacity-60 font-bold">
+            <p className=" border px-8 py-2 rounded-lg bg-purple-700 text-white  bg-opacity-60 font-bold">
               {stockStatus}
             </p>
-            <p className=" border border-[#059669] px-8 py-2 rounded-lg bg-[#059669] bg-opacity-60 font-bold">
+            <p className=" border px-8 py-2 rounded-lg bg-purple-700 bg-opacity-60 font-bold text-white">
               $ {price}
             </p>
           </div>
-          <a href="#" className="inline-block">
-            <Button variant="text" className="flex items-center gap-2">
-              Learn More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-                className="h-4 w-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </Button>
-          </a>
+          
         </CardBody>
       </Card>
     </div>

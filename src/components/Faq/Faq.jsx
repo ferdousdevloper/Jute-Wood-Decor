@@ -13,10 +13,18 @@ const Faq = () => {
   // };
   return (
     <div className="md:container md:mx-auto">
-      <h2 className="text-2xl font-semibold sm:text-4xl text-center mb-6">
+      <h2
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="500"
+      className="text-2xl font-semibold sm:text-4xl text-center mb-6">
         Frequently Asked Questions
       </h2>
-      <div className="">
+      <div
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="500"
+      className="">
         <section className="flex md:flex-row flex-col-reverse   justify-between items-center">
           <div className=" container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
             <div className="space-y-4">

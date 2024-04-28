@@ -16,6 +16,9 @@ import ViewDetail from "./components/ViewDetail/ViewDetail";
 import PrivateDetails from "./PrivateRoute/PrivateDetails";
 import UpdateCraftItem from "./components/UpdateCraftItem/UpdateCraftItem";
 import CategoryOutput from "./components/CategoryOutput/CategoryOutput";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const router = createBrowserRouter([
   {

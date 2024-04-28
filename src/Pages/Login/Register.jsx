@@ -6,6 +6,8 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import Loader from "../../components/Loader/Loader";
+import Lottie from "lottie-react";
+import LoginAnimation from "../../LoginAnimation.json";
 
 
 const Register = () => {
@@ -91,36 +93,24 @@ const Register = () => {
       <div className="pt-40 md:pt-20  relative bg1 bgEffect">
         <div className="absolute inset-0 bg-blue-gray-200 bg-opacity-25 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md"></div>
       </div>
+      <h1 className="text-5xl font-bold text-center">Register now!</h1>
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
-            <h1 data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-delay="300" 
-         className="text-5xl font-bold">Register now!</h1>
-            <p 
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-            className="py-6">
-              Elevate your registration experience with our intuitive form.
-              Effortlessly sign up with user-friendly features and robust
-              security measures, ensuring a smooth and secure onboarding
-              process.
-            </p>
-          </div>
+          <Lottie
+                animationData={LoginAnimation}
+                height={300}
+                width={300}
+                className=""
+              ></Lottie>
+              </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl inset-0 bg-blue-gray-200 bg-opacity-25 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md rounded-xl border">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span data-aos="fade-left"
-         data-aos-duration="1000"
-         data-aos-delay="700" className="label-text">Full Name</span>
+                  <span className="label-text">Full Name</span>
                 </label>
-                <input
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="900"
+                <input                
                   type="name"
                   placeholder="Full Name"
                   className="input input-bordered"
@@ -134,14 +124,9 @@ const Register = () => {
 
               <div className="form-control">
                 <label className="label">
-                  <span data-aos="fade-left"
-         data-aos-duration="1000"
-         data-aos-delay="1100" className="label-text">Email</span>
+                  <span className="label-text">Email</span>
                 </label>
                 <input
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="1300"
                   type="email"
                   placeholder="Email"
                   className="input input-bordered"
@@ -154,14 +139,9 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span data-aos="fade-left"
-         data-aos-duration="1000"
-         data-aos-delay="1500" className="label-text">Image Url</span>
+                  <span  className="label-text">Image Url</span>
                 </label>
                 <input
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="1700"
                   type="text"
                   placeholder="Image URL"
                   className="input input-bordered"
@@ -170,14 +150,9 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span data-aos="fade-left"
-         data-aos-duration="1000"
-         data-aos-delay="1900" className="label-text">Password</span>
+                  <span  className="label-text">Password</span>
                 </label>
-                <div
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="2100" className="relative">
+                <div className="relative">
                   <input
                     type={showPassword ? "password" : "text"}
                     placeholder="Password"
@@ -202,17 +177,13 @@ const Register = () => {
                 
               </div>
               <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="2300" className="form-control mt-6">
+              className="form-control mt-6">
                 <button className="btn bg-blue-500 text-white border-0">
                   Register
                 </button>
               </div>
               <div className="mt-8">
-                <p data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-delay="2500">
+                <p >
                   Already have an account?{" "}
                   <Link to="/login" className="text-primary">
                     <strong>Sign In</strong>

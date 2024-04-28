@@ -1,11 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Marquee from "react-fast-marquee";
 
 const Reviews = () => {
   return (
     <div className="  md:container mx-auto mt-10 mb-20">
-      <div className="text-center mb-10">
+      <div
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="500"
+      className="text-center mb-10">
         <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold mt-10 mb-6">
           TESTIMONIAL
         </h1>
@@ -16,7 +19,11 @@ const Reviews = () => {
       <section className=" ">
         <div className="container px-6 py-12 mx-auto">
           <div className="grid items-center gap-4 xl:grid-cols-5">
-            <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
+            <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="500"
+             className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
               <h2 className="text-4xl font-bold">
               Exceptional Service, Exceeded Expectations
               </h2>
@@ -24,7 +31,11 @@ const Reviews = () => {
               Dive into our customer's journey of transformation and discover how our service exceeded their expectations, leaving them thrilled and satisfied beyond measure.
               </p>
             </div>
-            <div className="p-6 xl:col-span-3">
+            <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="500"
+            className="p-6 xl:col-span-3">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="grid content-center gap-4">
                   <div className="p-6 rounded shadow-md dark:bg-gray-50">
@@ -45,7 +56,11 @@ const Reviews = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
+                  <div
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="500"
+                  className="p-6 rounded shadow-md dark:bg-gray-50">
                     <p>
                     Explore a tapestry of testimonials illuminating our steadfast commitment to excellence. From the first interaction to the last, customers extol our superior quality, exemplary service, and unmatched value. Join our loyal community today and immerse yourself in the unparalleled experience that defines our brand.
                     </p>
@@ -64,7 +79,11 @@ const Reviews = () => {
                     </div>
                   </div>
                 </div>
-                <div className="grid content-center gap-4">
+                <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="500"
+                className="grid content-center gap-4">
                   <div className="p-6 rounded shadow-md dark:bg-gray-50">
                     <p>
                     Step into a world of authentic testimonials showcasing our unwavering dedication to excellence. From the initial encounter to the final transaction, our customers' journey is marked by unparalleled quality, exceptional service, and unbeatable value. Join our thriving community today and discover why trust in our brand is unwavering.
@@ -83,7 +102,11 @@ const Reviews = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
+                  <div
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="500"
+                  className="p-6 rounded shadow-md dark:bg-gray-50">
                     <p>
                     Immerse yourself in the heartfelt testimonials of our valued customers, who share their transformative journeys with honesty and enthusiasm. From initial skepticism to overwhelming satisfaction, they recount the exceptional experiences that have left a lasting impression. Our commitment to unparalleled quality, impeccable service, and unbeatable value shines through each testimonial, reflecting our dedication to exceeding expectations. Join our satisfied community of customers and discover why they trust us time and time again. With every testimonial, we reaffirm our promise to deliver nothing short of excellence, ensuring your journey with us is nothing less than extraordinary.
                     </p>

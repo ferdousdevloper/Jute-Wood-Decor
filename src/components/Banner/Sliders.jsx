@@ -4,15 +4,17 @@ import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Typewriter } from 'react-simple-typewriter'
 
 import "./slidersStyle.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
 
 const Sliders = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative -z-50">
         <Swiper
           spaceBetween={10}
           centeredSlides={true}
@@ -33,29 +35,36 @@ const Sliders = () => {
                 
                 className="text-lime-600 font-gilda text-4xl md:text-8xl font-bold"
               >
-                JUTE WOOD DECOR
+                JUTE WOOD <br />
+                 <Typewriter
+            words={['DECOR']}
+            loop={20}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            className='ml-10'
+            
+          />
               </h1>
+              <Fade direction="up" delay={500} duration={1000}>
               <h1
-                
-                className="mt-5 text-white text-3xl md:text-5xl font-semibold"
+                className="md:mt-5 text-white text-3xl md:text-5xl font-semibold"
               >
                 Jute & Wood Crafts: <br />
                  Nature's Artistry
               </h1>
-              
+              </Fade>
+              <Fade direction="up" delay={500} duration={1000}>
               <p
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-delay="1200"
-                className="text-white mt-5 text-xl font-semibold"
+               className="text-white md:mt-5 text-xl font-semibold"
               >
-                Discover the beauty of sustainable elegance! Explore our collection of handcrafted jute and wood creations, where each piece tells a story of natural charm and eco-friendly craftsmanship.
+                Discover the beauty of sustainable elegance! Explore our collection of handcrafted jute and wood creations.
               </p>
               <div className="flex md:justify-start  justify-center items-center gap-5">
                 <div
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="1400"
+                  
                 >
                   <Link
                     to="/login"
@@ -65,9 +74,7 @@ const Sliders = () => {
                   </Link>
                 </div>
                 <div
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="1800"
+                  
                 >
                   <Link
                     to="/register"
@@ -77,6 +84,7 @@ const Sliders = () => {
                   </Link>
                 </div>
               </div>
+              </Fade>
             </div>
           </div>
           {/* slide  */}

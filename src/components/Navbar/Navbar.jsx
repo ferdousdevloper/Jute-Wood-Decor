@@ -77,8 +77,8 @@ const Navbar = () => {
   );
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="shadow-lg navbar z-[99]  bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm md:px-16">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown z-[99]">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -163,7 +163,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content mt-3 z-[1] px-2 py-10 shadow-4xl shadow  rounded-box md:w-64 border  bg-blue-gray-200 bg-opacity-45 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md "
+                className="menu dropdown-content mt-3 z-[1] px-2 py-10 shadow-4xl shadow bg-white rounded-box md:w-64 border   "
               >
                 <img
                   src={

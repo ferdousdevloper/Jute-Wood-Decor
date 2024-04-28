@@ -1,6 +1,8 @@
 import Swal from 'sweetalert2'
+import useAuth from '../../Hook/useAuth';
 
 const AddCraftItems = () => {
+  const {  user } = useAuth();
 
   const handleAddProduct = event => {
     event.preventDefault();
@@ -45,8 +47,8 @@ const AddCraftItems = () => {
 
 
   return (
-    <div className="md:container mx-auto pt-10">
-      <div className="shadow-lg p-5 border dark:bg-[#1a2641d5]">
+    <div className="md:container mx-auto py-20 ">
+      <div className="shadow-lg p-5 border dark:bg-[#1a2641d5] rounded-3xl">
         {/* Heading */}
         <div className="mt-5 mb-8">
           <p className="text-center text-3xl font-semibold">
@@ -57,7 +59,9 @@ const AddCraftItems = () => {
               <span className="text-[#FF497C]">
                 {/* {update ? "Update " : "Add "} */}
               </span>
-              Your Product
+              <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold  mb-6">
+          ADD YOUR PRODUCT
+        </h1>
             </span>
           </p>
         </div>
@@ -174,7 +178,6 @@ const AddCraftItems = () => {
                 id="stockStatus"
                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
                 type="text"
-                defaultValue="stockStatus"
                 placeholder="Stock Status"
               >
                 <option disabled selected>
@@ -239,6 +242,7 @@ const AddCraftItems = () => {
                 placeholder="Enter User Email"
                 id="email"
                 name="email"
+                defaultValue={user.email}
               />
               <label className="block mb-2 mt-4 dark:text-white" htmlFor="userName">
                 User Name
@@ -249,6 +253,7 @@ const AddCraftItems = () => {
                 placeholder="Enter User Name"
                 id="userName"
                 name="userName"
+                defaultValue={user.displayName}
               />
 
               

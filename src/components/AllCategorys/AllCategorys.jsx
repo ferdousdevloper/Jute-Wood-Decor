@@ -21,9 +21,13 @@ const AllCategorys = () => {
 
   return (
     <div className="lg:container mx-auto">
-      <div className="text-center mb-10">
+      <div 
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-delay="1200"
+      className="text-center mb-10">
         <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold mt-10 mb-6">
-          MY ART & CRAFT LIST
+          ALL CATEGORY LIST
         </h1>
         <p className="max-w-[600px] mx-auto">
           Explore our diverse range of categories, from fashion to technology.
