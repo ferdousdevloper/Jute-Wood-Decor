@@ -1,10 +1,28 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../public/Logo.png";
 import useAuth from "../../Hook/useAuth";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [theme, setTheme] = useState('light')
+  useEffect(()=>{
+    localStorage.setItem('theme', theme)
+    const localTheme = localStorage.getItem('theme')
+    document.querySelector('html').setAttribute('data-theme', localTheme)
+  },[theme])
+  
+  const handleToggle = e =>{
+    if(e.target.checked){
+      setTheme('dark')
+    }else{
+      setTheme('light')
+    }
+  }
+  console.log(theme);
+
+
   const { logout, user } = useAuth();
-  console.log(user);
+  //console.log(user);
   const navLink = (
     <>
       <li>
@@ -86,16 +104,47 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <img className="md:w-[280px] w-[150px]" src={logo} alt="" />
+          <Link to='/' className="bg-white p-1 rounded-xl"><img className="md:w-[280px] w-[150px]" src={logo} alt="" /></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-          {navLink}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
-        
         <div className="navbar-end z-[99] flex md:flex-row flex-col gap-4">
-        <span className="md:mr-6 hidden md:block">{user?.email}</span>
+          <label className="flex cursor-pointer gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+            </svg>
+            <input
+            onChange={handleToggle}
+              type="checkbox"
+              className="toggle theme-controller"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </label>
+          <span className="md:mr-6 hidden md:block">{user?.email}</span>
           {/*user singed in information */}
           {user ? (
             <div
@@ -135,7 +184,10 @@ const Navbar = () => {
                   </span>
                 </li>
                 <li>
-                  <button onClick={logout} className="btn btn-sm btn-error text-white">
+                  <button
+                    onClick={logout}
+                    className="btn btn-sm btn-error text-white"
+                  >
                     Logout
                   </button>
                 </li>

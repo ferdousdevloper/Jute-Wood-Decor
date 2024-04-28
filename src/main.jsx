@@ -15,8 +15,6 @@ import FirebaseAuthProvider from "./FirebaseAuthProvider/FirebaseAuthProvider";
 import ViewDetail from "./components/ViewDetail/ViewDetail";
 import PrivateDetails from "./PrivateRoute/PrivateDetails";
 import UpdateCraftItem from "./components/UpdateCraftItem/UpdateCraftItem";
-import AllCategorys from "./components/AllCategorys/AllCategorys";
-import ShowCategoryData from "./components/ShowCategoryData/ShowCategoryData";
 import CategoryOutput from "./components/CategoryOutput/CategoryOutput";
 
 const router = createBrowserRouter([
@@ -79,7 +77,7 @@ const router = createBrowserRouter([
       {
         path: "/category/:category",
         element: <CategoryOutput></CategoryOutput>,
-        //loader: ({params}) => fetch(`http://localhost:5000/category/${params.category}`)
+        
       },
     ],
   },
