@@ -65,7 +65,7 @@ const Register = () => {
       toast.success("Successfully Register");
       updateUserProfile(name, image).then(()=>{ navigate("/")})
       const user = {email};
-        fetch('http://localhost:5000/user', {
+        fetch('https://jute-wood-decor-server-site.vercel.app/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

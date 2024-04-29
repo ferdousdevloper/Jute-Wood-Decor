@@ -37,7 +37,7 @@ const UpdateCraftItem = () => {
     console.log(updatedCraftItem);
 
     //send data to the server
-    fetch(`http://localhost:5000/decor/${_id}`,{
+    fetch(`https://jute-wood-decor-server-site.vercel.app/decor/${_id}`,{
         method: 'PUT',
         headers: {
             'content-type': 'application/json'

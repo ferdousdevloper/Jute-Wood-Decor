@@ -7,7 +7,7 @@ const AllCategorys = () => {
   const [categorys, setCategorys] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/category")
+    fetch("https://jute-wood-decor-server-site.vercel.app/category")
       .then((res) => res.json())
       .then((data) => {
         setCategorys(data);

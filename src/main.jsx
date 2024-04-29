@@ -29,12 +29,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/decor"),
+        loader: () => fetch("https://jute-wood-decor-server-site.vercel.app/decor"),
       },
       {
         path: "/allCraftItems",
         element: <AllCraftItems></AllCraftItems>,
-        loader: () => fetch("http://localhost:5000/decor"),
+        loader: () => fetch("https://jute-wood-decor-server-site.vercel.app/decor"),
       },
       {
         path: "/addCraftItems",
@@ -68,14 +68,14 @@ const router = createBrowserRouter([
           </PrivateDetails>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/decor/${params._id}`),
+          fetch(`https://jute-wood-decor-server-site.vercel.app/decor/${params._id}`),
       },
       {
         path: "/updateCraftItem/:_id",
         element: (<PrivateDetails>
           <UpdateCraftItem></UpdateCraftItem>
         </PrivateDetails>),
-        loader:({params}) => fetch(`http://localhost:5000/decor/${params._id}`)
+        loader:({params}) => fetch(`https://jute-wood-decor-server-site.vercel.app/decor/${params._id}`)
       },
       {
         path: "/category/:category",

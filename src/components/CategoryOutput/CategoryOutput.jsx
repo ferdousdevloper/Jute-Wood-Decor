@@ -9,7 +9,7 @@ const CategoryOutput = () => {
   console.log(category);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/decor`)
+    fetch(`https://jute-wood-decor-server-site.vercel.app/decor`)
       .then((res) => res.json())
       .then((data) => {
         const filterData = data.filter(

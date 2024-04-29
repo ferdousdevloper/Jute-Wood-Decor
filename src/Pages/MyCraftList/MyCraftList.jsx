@@ -15,7 +15,7 @@ const MyCraftList = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myCraftList/${user?.email}`)
+    fetch(`https://jute-wood-decor-server-site.vercel.app/myCraftList/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setItem(data);
@@ -38,7 +38,7 @@ const MyCraftList = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/decor/${_id}`, {
+        fetch(`https://jute-wood-decor-server-site.vercel.app/decor/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

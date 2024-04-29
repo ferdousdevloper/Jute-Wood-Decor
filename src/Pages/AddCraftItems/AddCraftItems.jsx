@@ -26,7 +26,7 @@ const AddCraftItems = () => {
     console.log(newCraftItem);
 
     //send data to the server
-    fetch('http://localhost:5000/decor',{
+    fetch('https://jute-wood-decor-server-site.vercel.app/decor',{
         method: 'POST',
         headers: {
             'content-type': 'application/json'
