@@ -1,5 +1,6 @@
 import Swal from 'sweetalert2'
 import useAuth from '../../Hook/useAuth';
+import { Helmet } from 'react-helmet';
 
 const AddCraftItems = () => {
   const {  user } = useAuth();
@@ -48,6 +49,9 @@ const AddCraftItems = () => {
 
   return (
     <div className="md:container mx-auto py-20 ">
+      <Helmet>
+        <title>WOOD | ADD CRAFT ITEM</title>
+      </Helmet>
       <div className="shadow-lg p-5 border dark:bg-[#1a2641d5] rounded-3xl">
         {/* Heading */}
         <div className="mt-5 mb-8">

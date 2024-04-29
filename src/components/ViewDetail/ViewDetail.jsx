@@ -4,6 +4,7 @@ import {
   CardBody,
   Typography,
 } from "@material-tailwind/react";
+import { Helmet } from "react-helmet";
 import { FaStar } from "react-icons/fa";
 
 import { useLoaderData } from "react-router-dom";
@@ -24,6 +25,9 @@ const ViewDetail = () => {
 
   return (
     <div className="my-20">
+      <Helmet>
+        <title>WOOD | VIEW DETAILS</title>
+      </Helmet>
       <Card className="w-full mx-auto max-w-[68rem] md:flex-row flex-col shadow-2xl">
         <CardHeader
           shadow={false}

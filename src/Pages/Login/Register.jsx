@@ -88,7 +88,9 @@ const Register = () => {
 
     return (
         <div className="md:w-4/6 mx-auto md:pt-20">
-      <Helmet><title>Wood | REGISTER</title></Helmet>
+      <Helmet>
+        <title>WOOD | REGISTER</title>
+      </Helmet>
       {loading && <Loader></Loader>}
       
       <h1 className="text-5xl font-bold text-center pt-10 md:pt-20 ">Register now!</h1>

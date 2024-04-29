@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+import { Helmet } from "react-helmet";
 import { Link, useLoaderData } from "react-router-dom";
 
 const AllCraftItems = () => {
@@ -6,6 +7,9 @@ const AllCraftItems = () => {
 
   return (
     <div className="md:container md:mx-auto my-10 ">
+      <Helmet>
+        <title>WOOD | ALL CRAFT ITEMS</title>
+      </Helmet>
       <h2
       className="text-2xl font-semibold sm:text-4xl text-center mb-6">
         ALL ART & CRAFT ITEMS

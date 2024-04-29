@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -58,6 +59,9 @@ const UpdateCraftItem = () => {
 
   return (
     <div className="md:container mx-auto py-20">
+      <Helmet>
+        <title>WOOD | UPDATE CRAFT ITEM</title>
+      </Helmet>
       <div className="shadow-lg p-5 border dark:bg-[#1a2641d5] rounded-3xl">
         <div className="mt-5 mb-8">
           <p className="text-center text-3xl font-semibold">

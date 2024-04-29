@@ -43,7 +43,7 @@ const Login = () => {
   return (
     <div className="md:w-4/6 mx-auto ">
       <Helmet>
-        <title>WOOD | LOGIN</title>
+        <title>JWD | LOGIN</title>
       </Helmet>
       {loading && <Loader></Loader>}
       <h1 className="text-5xl font-bold text-center pt-10 md:pt-20">Login now!</h1>
