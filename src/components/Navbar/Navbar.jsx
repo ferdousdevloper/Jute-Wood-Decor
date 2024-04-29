@@ -77,7 +77,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="shadow-lg navbar z-[99]  bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm md:px-16">
+    <div className="shadow-lg navbar z-[60]   md:px-16">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown z-[99]">
@@ -109,7 +109,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
-        <div className="navbar-end z-[99] flex md:flex-row flex-col gap-4">
+        <div className="navbar-end z-[10] flex md:flex-row flex-col gap-4">
           <label className="flex cursor-pointer gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content mt-3 z-[1] px-2 py-10 shadow-4xl shadow bg-white rounded-box md:w-64 border   "
+                className="menu dropdown-content mt-3 z-[99] px-2 py-10 shadow-4xl shadow bg-white rounded-box md:w-64 border   "
               >
                 <img
                   src={
