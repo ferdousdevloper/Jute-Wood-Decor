@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -5,11 +6,10 @@ const Footer = () => {
   return (
     <div>
       <footer className="footer footer-center p-10 bg-neutral text-neutral-content">
-        <div>
+        <Fade
+         direction="up" delay={500} duration={1000}>
           <h1
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-delay="500"
+         
           className="font-gilda  text-3xl font-extrabold">
           <Typewriter
             words={['JUTE WOOD DECOR']}
@@ -22,21 +22,21 @@ const Footer = () => {
             
             
           /></h1>
-        </div>
-        <div
-        data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-delay="700"
+        </Fade>
+        <Fade
+        direction="up" delay={500} duration={1000}
+        
         >
           <h1 className="text-">
             <strong>Address: </strong>Narayanganj, Dhaka, Bangladesh
           </h1>
-        </div>
+        </Fade>
         <fieldset className="w-full space-y-1 dark:text-gray-800">
+          <Fade
+          direction="up" delay={500} duration={1000}>
           <div
-          data-aos="fade-up"
-          data-aos-duration="900"
-          data-aos-delay="900"
+          
+         
           className="flex">
             <input
               type="email"
@@ -48,36 +48,33 @@ const Footer = () => {
               Subscribe
             </span>
           </div>
+          </Fade>
         </fieldset>
+        <Fade
+        direction="up" delay={500} duration={1000}>
         <nav className="grid grid-flow-col gap-4">
           <Link to='/login' 
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
+          
           className="link link-hover">Login</Link>
           <Link to='/register' 
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          data-aos-delay="1100"
+          
           className="link link-hover">Register</Link>
           <Link to='/allCraftItems' 
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          data-aos-delay="1200"
+         
           className="link link-hover">All Art & Craft Item</Link>
           <Link to='/myCraftList' 
-          data-aos="fade-up"
-          data-aos-duration="1300"
-          data-aos-delay="1300"
+          
           className="link link-hover">Your Art & Craft List</Link>
           
         </nav>
+        </Fade>
+        <Fade
+        direction="up" delay={500} duration={1000}
+        >
         <nav>
           <div className="grid grid-flow-col gap-4">
             <a
-            data-aos="fade-up"
-            data-aos-duration="1400"
-            data-aos-delay="1400">
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -89,9 +86,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="1500"
+            
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,9 +99,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-            data-aos="fade-up"
-            data-aos-duration="1600"
-            data-aos-delay="1600"
+            
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,9 +113,11 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <div>
+        </Fade>
+        <Fade
+        direction="up" delay={500} duration={1000}>
           <p>Copyright © 2024 - All right reserved by Jute Wood Decor - Ferdous Developer</p>
-        </div>     
+        </Fade>     
       </footer>     
     </div>    
   );

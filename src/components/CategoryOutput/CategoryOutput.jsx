@@ -25,7 +25,7 @@ const CategoryOutput = () => {
   // console.log(selectedCategory);
 
   return (
-    <div className="lg:container mx-auto my-20">
+    <div className="md:container mx-auto my-20">
       <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold mt-10 mb-6 text-center">
           {category}
         </h1>
