@@ -53,7 +53,7 @@ const SingleCraftItems = ({ decor }) => {
         className="space-y-2 text-white">
             <div rel="noopener noreferrer" href="#" className="block">
               <div className="flex justify-between">
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-left text-xl font-semibold">
                   {name}
                 </h3>
                 <div className="flex gap-2 items-center  p-2 rounded-xl">
