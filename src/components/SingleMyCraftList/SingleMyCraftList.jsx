@@ -25,7 +25,7 @@ const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
     return (
         <div>
             <div className="">
-            <div className="w-full shadow-2xl ">
+            <div className="w-full shadow-2xl border">
               <figure className="">
                 <img
                   src={image}
