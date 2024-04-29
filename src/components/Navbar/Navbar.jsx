@@ -200,12 +200,6 @@ const Navbar = () => {
               </button>
             </Link>
           )}
-          {/* <a className="btn">Register</a>
-          <Link to="/login">
-              <button className="btn bg-lime-500  rounded-xl text-white px-8">
-                Login
-              </button>
-            </Link> */}
         </div>
       </div>
     </div>
