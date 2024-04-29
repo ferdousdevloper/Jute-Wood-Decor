@@ -72,7 +72,7 @@ const MyCraftList = () => {
   }
 
   return (
-    <div className="md:container md:mx-auto mx-20 my-20">
+    <div className="md:container md:mx-auto mx-5 my-20">
       <div className="text-center mb-10">
         <h1 className="font-gilda md:text-5xl text-2xl  font-bold md:font-extrabold mt-10 mb-6">
           MY ART & CRAFT LIST

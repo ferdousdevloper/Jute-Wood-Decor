@@ -24,11 +24,11 @@ const ViewDetail = () => {
 
   return (
     <div className="my-20">
-      <Card className="w-full mx-auto max-w-[68rem] flex-row shadow-2xl">
+      <Card className="w-full mx-auto max-w-[68rem] md:flex-row flex-col shadow-2xl">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-2/5 shrink-0 rounded-r-none"
+          className="m-0 md:w-2/5 shrink-0 rounded-r-none"
         >
           <img
             src={image}

@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center p-10 bg-neutral text-neutral-content rounded">
+      <footer className="footer footer-center p-10 bg-neutral text-neutral-content">
         <div>
           <h1
           data-aos="fade-up"
@@ -120,19 +120,11 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <aside>
-          <p
-          data-aos="fade-up"
-          data-aos-duration="1700"
-          data-aos-delay="1700"
-          >Copyright © 2024 - All right reserved by Jute Wood Decor - Ferdous Developer</p>
-        </aside>
-        
-        
-      </footer>
-      
-    </div>
-    
+        <div>
+          <p>Copyright © 2024 - All right reserved by Jute Wood Decor - Ferdous Developer</p>
+        </div>     
+      </footer>     
+    </div>    
   );
 };
 

@@ -67,7 +67,7 @@ const AddCraftItems = () => {
         </div>
         {/* form */}
         <form onSubmit={handleAddProduct}>
-          <div className="flex gap-8 ">
+          <div className="flex gap-8 flex-col md:flex-row ">
             <div className="flex-1">
               <label className="block mb-2 dark:text-white" htmlFor="name">
                 Item Name

@@ -87,13 +87,11 @@ const Register = () => {
 
 
     return (
-        <div className="md:w-4/6 mx-auto pt-40 md:pt-20">
+        <div className="md:w-4/6 mx-auto md:pt-20">
       <Helmet><title>Wood | REGISTER</title></Helmet>
       {loading && <Loader></Loader>}
-      <div className="pt-40 md:pt-20  relative bg1 bgEffect">
-        <div className="absolute inset-0 bg-blue-gray-200 bg-opacity-25 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md"></div>
-      </div>
-      <h1 className="text-5xl font-bold text-center">Register now!</h1>
+      
+      <h1 className="text-5xl font-bold text-center pt-10 md:pt-20 ">Register now!</h1>
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">

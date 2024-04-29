@@ -33,7 +33,7 @@ const Sliders = () => {
             <div className="md:w-1/2 mx-auto">
               <h1
                 
-                className="text-lime-600 font-gilda text-4xl md:text-8xl font-bold"
+                className="text-lime-600 font-gilda text-2xl md:text-3xl lg:text-6xl font-bold"
               >
                 JUTE WOOD <br />
                  <Typewriter
@@ -50,7 +50,7 @@ const Sliders = () => {
               </h1>
               <Fade direction="up" delay={500} duration={1000}>
               <h1
-                className="md:mt-5 text-white text-3xl md:text-5xl font-semibold"
+                className="md:mt-5 text-white text-xl md:text-2xl font-medium"
               >
                 Jute & Wood Crafts: <br />
                  Nature's Artistry
@@ -58,7 +58,7 @@ const Sliders = () => {
               </Fade>
               <Fade direction="up" delay={500} duration={1000}>
               <p
-               className="text-white md:mt-5 text-xl font-semibold"
+               className="text-white md:mt-5 text-xl font-normal"
               >
                 Discover the beauty of sustainable elegance! Explore our collection of handcrafted jute and wood creations.
               </p>

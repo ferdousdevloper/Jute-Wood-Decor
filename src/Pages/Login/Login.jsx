@@ -46,9 +46,8 @@ const Login = () => {
         <title>WOOD | LOGIN</title>
       </Helmet>
       {loading && <Loader></Loader>}
-      <div className="pt-40 md:pt-20  relative bg1 bgEffect"></div>
-      <h1 className="text-5xl font-bold text-center">Login now!</h1>
-      <div className="hero min-h-screen pt-40 md:pt-20 ">
+      <h1 className="text-5xl font-bold text-center pt-10 md:pt-20">Login now!</h1>
+      <div className="hero min-h-screen md:pt-20 ">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center">
             <div>
