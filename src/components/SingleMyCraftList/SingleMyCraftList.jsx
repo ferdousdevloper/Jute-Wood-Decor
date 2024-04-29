@@ -2,7 +2,6 @@ import { FaStar } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
 
 const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
 
@@ -13,12 +12,8 @@ const SingleMyCraftList = ({p, decor, setDecor, handleDelete}) => {
         category,
         price,
         customization,
-        processingTime,
         stockStatus,
-        rating,
-        description,
-        email,
-        userName,
+        rating, 
       } = p || {};
 
       
