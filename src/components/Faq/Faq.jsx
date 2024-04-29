@@ -2,15 +2,7 @@ import Lottie from "lottie-react";
 import faqAnimation from "../../faq-animation.json"
 
 const Faq = () => {
-  // const defaultOptions ={
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: faqAnimation,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
 
-  // };
   return (
     <div className="md:container md:mx-auto">
       <h2
