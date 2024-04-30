@@ -29,11 +29,11 @@ const Sliders = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <div className="absolute z-10  w-full h-full top-[30%] md:top-[8%] mx-auto text-center md:text-left">
+          <div className="absolute z-10  w-full h-full top-[30%] md:top-[25%] mx-auto text-center md:text-left">
             <div className="md:w-1/2 mx-auto">
               <h1
                 
-                className="text-lime-600 font-gilda text-2xl md:text-3xl lg:text-6xl font-bold"
+                className="text-lime-600 font-gilda text-5xl md:text-7xl lg:text-8xl font-bold"
               >
                 JUTE WOOD <br />
                  <Typewriter
@@ -50,7 +50,7 @@ const Sliders = () => {
               </h1>
               <Fade direction="up" delay={500} duration={1000}>
               <h1
-                className="md:mt-5 text-white text-xl md:text-2xl font-medium"
+                className="md:mt-5 text-white text-xl md:text-5xl font-medium"
               >
                 Jute & Wood Crafts: <br />
                  Nature's Artistry

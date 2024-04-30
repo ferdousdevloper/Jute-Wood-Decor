@@ -67,10 +67,7 @@ const CategoryOutput = () => {
                     {item.processingTime} Day
                   </p>
                   </div>
-                  <p className="py-4 text-gray-500">
-                    <strong>Description: </strong>
-                    {item.description} Day
-                  </p>
+                  
                   <Link to={`/viewDetail/${item._id}`} className="flex justify-end">
                 <button className="btn w-full bg-green-500 text-white text-md rounded-full">View Details</button>
             </Link>
