@@ -32,14 +32,14 @@
 
 ______________________________________________________________________________________
 
-## Features and characteristics of my Luxury Rentals website:
+## Features and characteristics of my JUTE WOOD DECOR website:
 
-- Extensive Property Listings: Browse a vast collection of luxury properties available for rent, including apartments, villas, penthouses, and more.
+- Handcrafted Excellence: Each piece is meticulously crafted by skilled artisans, ensuring exceptional quality and attention to detail.
 
-- Dedicated Agent Profiles: Meet our team of experienced agents who specialize in luxury rentals. Learn about their expertise, view their contact information, and connect with them directly.
+- Sustainable Materials: We prioritize eco-friendly practices, utilizing jute and wood sourced from sustainable forests, reducing environmental impact.
 
-- Interactive Property Viewing: Explore properties in detail with our immersive "View Property" feature, offering high-resolution images, 3D virtual tours, and floor plans for a comprehensive viewing experience.
+- Versatile Designs: Explore a diverse range of decor items, from jute-wrapped vases to intricately carved wooden sculptures, suitable for any interior aesthetic.
 
-- Customer Reviews and Testimonials: Gain insights from our satisfied clients through genuine reviews and testimonials. Hear about their experiences renting luxury properties through our platform.
+- Timeless Appeal: Our decor pieces boast timeless charm, adding warmth and character to any room, whether modern or traditional.
 
-- Comprehensive Services: Access a range of services tailored to meet your needs, including property management, concierge services, and relocation assistance, ensuring a seamless and stress-free rental experience.
+- Authentic Craftsmanship: Experience the authenticity of artisanal craftsmanship, celebrating the natural beauty of jute and wood in every intricately designed piece.
