@@ -1,8 +1,42 @@
-# React + Vite
+![JUTE WOOD DECOR](/public/logo.jpg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# JUTE WOOD DECOR
 
-Currently, two official plugins are available:
+## Live site: [JUTE WOOD DECOR](https://assignment-10-143ad.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 
+**Resources:**
+
+- [React Router Dom](https://reactrouter.com/en/main)
+- [Firebase](https://firebase.google.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [TailwindCSS Buttons](https://devdojo.com/tailwindcss/buttons)
+- [Mamba UI - Components](https://mambaui.com/components)
+- [Material Tailwind - Components](https://www.material-tailwind.com/)
+- [Daisy UI](https://daisyui.com/)
+- [React-Hot-Toast](https://react-hot-toast.com/)
+- [React-Spinner](https://www.npmjs.com/package/react-spinners)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+- [React Fast Marquee](www.react-fast-marquee.com)
+- [React Helmet](https://www.npmjs.com/package/react-helmet)
+
+**Challenges Requirements packages:**
+
+- [Swiper-slider](https://swiperjs.com/)
+- [React Hook form](https://react-hook-form.com/)
+- [Animate CSS](https://animate.style/)
+- [AOS Package](https://michalsnik.github.io/aos/)
+
+______________________________________________________________________________________
+
+## Features and characteristics of my Luxury Rentals website:
+
+- Extensive Property Listings: Browse a vast collection of luxury properties available for rent, including apartments, villas, penthouses, and more.
+
+- Dedicated Agent Profiles: Meet our team of experienced agents who specialize in luxury rentals. Learn about their expertise, view their contact information, and connect with them directly.
+
+- Interactive Property Viewing: Explore properties in detail with our immersive "View Property" feature, offering high-resolution images, 3D virtual tours, and floor plans for a comprehensive viewing experience.
+
+- Customer Reviews and Testimonials: Gain insights from our satisfied clients through genuine reviews and testimonials. Hear about their experiences renting luxury properties through our platform.
+
+- Comprehensive Services: Access a range of services tailored to meet your needs, including property management, concierge services, and relocation assistance, ensuring a seamless and stress-free rental experience.
