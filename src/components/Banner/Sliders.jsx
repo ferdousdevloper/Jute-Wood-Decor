@@ -33,10 +33,11 @@ const Sliders = () => {
             <div className="md:w-1/2 mx-auto">
               <h1
                 
-                className="text-lime-600 font-gilda text-5xl md:text-7xl lg:text-8xl font-bold"
+                className="text-orange-300 font-gilda text-5xl md:text-7xl lg:text-8xl font-bold"
               >
                 JUTE WOOD <br />
-                 <Typewriter
+                <span className="text-yellow-300 stroke-cyan-500">
+                <Typewriter
             words={['DECOR']}
             loop={20}
             cursor
@@ -44,9 +45,11 @@ const Sliders = () => {
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
-            className='ml-10'
+            className='ml-10 '
             
           />
+                </span>
+                 
               </h1>
               <Fade direction="up" delay={500} duration={1000}>
               <h1
